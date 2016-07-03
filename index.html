@@ -9,7 +9,12 @@
     <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="js/lib/jqvmap/jqvmap.css" media="screen" rel="stylesheet" type="text/css">
 
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/lib/jqvmap/jquery.vmap.js"></script>
+    <script type="text/javascript" src="js/lib/jqvmap/maps/jquery.vmap.world.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/jQueryScript.js"></script>
 </head>
 <body>
     <!-- Header to the left side of the screen -->
@@ -22,9 +27,9 @@
                     <li><a href="#" class="a-header-links">Contact</a></li>
                 </ul>
                 <ul class="ul-header-logos">
-                    <li><a href="#" class="a-header-logos"><img src="images/facebook-logo.png" alt="facebook logo" /><span>Facebook</span></a></li>
-                    <li><a href="#" class="a-header-logos"><img src="images/instagram.png" alt="instagram logo" /><span>Instagram</span></a></li>
-                    <li><a href="#" class="a-header-logos"><img src="images/linkedin-logo.png" alt="linkedin logo" /><span>LinkedIn</span></a></li>
+                    <li><a href="#" class="a-header-logos"><img src="images/social-icons/facebook_circle_color.png" alt="facebook logo" /><span>Facebook</span></a></li>
+                    <li><a href="#" class="a-header-logos"><img src="images/social-icons/instagram_circle_color.png" alt="instagram logo" /><span>Instagram</span></a></li>
+                    <li><a href="#" class="a-header-logos"><img src="images/social-icons/linkedin_circle_color.png" alt="linkedin logo" /><span>LinkedIn</span></a></li>
                 </ul>
             </nav>
         </section>
@@ -50,41 +55,40 @@
         <!-- About me section -->
         <section class="section-grey">
             <div class="section-container">
-                <h1 class="content-section-h1">About me</h1>
                 <!-- First section in the about section -->
-                <div class="">
-                    <ul>
-                        <li class="about-section-list">
-                            <div class="about-intro-section">
-                                I´m a cheerful lad from Sweden. At the moment off duty from
-                                my workplace, Volvo assemblage factory, to become a developer.
-                                In addition to the new-found interest in development, love to travel and to workout
-                                but also has a keen interest in games, movies and technology
-                            </div>
-                            <img class="about-intro-image" alt="" src=""></img>
-                        </li>
-                        <li class="about-section-list">
-                            <div class="">
-                                <h4>Hobbies</h4>
-                                <ul>
-                                    <li>Travel</li>
-                                    <li>Workout</li>
-                                    <li>Games</li>
-                                    <li>Movies</li>
-                                    <li>Sports</li>
-                                </ul>
-                            </div>
-                            <img src="" alt="" class=""/>
-                        </li>
-                    </ul>
+                <div class="about-section-divider">
+                    <h1 class="content-section-h1">About me</h1>
+                    <div class="about-intro-section">
+                        I´m a cheerful coffe-loving lad from Sweden. At the moment off duty from
+                        my workplace, Volvo assemblage factory, to become a developer.
+                        Besides my "beloved interests", have I got a new-found interest in development.
+                        I love to solve all kind of problems. From playing with LEGO to different developing
+                        problems, even if I have to swear and pull my hair.
+                    </div>
+                    <div class="about-section-list">
+                        <h4>My beloved interests...</h4>
+                        <div class="about-section-list-container">
+                            <ul>
+                                <li><img src="images/about-icons/travel.png" alt="" /><span> Travel around the world</span></li>
+                                <li><img src="images/about-icons/Workout.png" alt="" /><span>Workout, except runnig..</span></li>
+                                <li><img src="images/about-icons/food.png" alt="" /><span>Food, mhm.. all kinds of food!</span></li>
+                                <li><img src="images/about-icons/games.png" alt="" /><span>To play Videogames/Boardgames</span></li>
+                                <li><img src="images/about-icons/movies.png" alt="" /><span>To watch movies, especially Disney!</span></li>
+                                <li><img src="images/about-icons/sports.png" alt="" /><span>Exercise and watch all kind of sports</span></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+
                 <!-- Second section in the about section -->
-                <div class="">
-                    Skills
+                <div class="about-section-travelmap">
+                    <h1>Travelmap <span>I´ve been visting all colored countries but still I have some on my bucket list</span></h1>
+                    <div id="vmap" style="width: 1000px; height: 600px;"></div>
                 </div>
+
                 <!-- Third section in the about section -->
-                <div class="">
-                    Travel map
+                <div class="about-section-skills">
+                    <h1>Skills</h1>
                 </div>
             </div>
         </section>
